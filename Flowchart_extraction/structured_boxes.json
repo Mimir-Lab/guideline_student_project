@@ -1,0 +1,982 @@
+[
+    {
+        "box_position": {
+            "x": 347,
+            "y": 13,
+            "width": 110,
+            "height": 16
+        },
+        "text": "Patient beatmet?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 353,
+            "y": 43,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 293,
+            "y": 73,
+            "width": 216,
+            "height": 14
+        },
+        "text": "Ist das Bewusstsein des Patienten",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 609,
+            "y": 73,
+            "width": 38,
+            "height": 12
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 537,
+            "y": 85,
+            "width": 24,
+            "height": 12
+        },
+        "text": "Falls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 368,
+            "y": 87,
+            "width": 63,
+            "height": 21
+        },
+        "text": "adäquat?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 536,
+            "y": 100,
+            "width": 26,
+            "height": 8
+        },
+        "text": "NEr",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 339,
+            "y": 107,
+            "width": 122,
+            "height": 16
+        },
+        "text": "(RASS-Score >=-3)",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 605,
+            "y": 107,
+            "width": 142,
+            "height": 18
+        },
+        "text": "Zunächst primäre und",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 597,
+            "y": 125,
+            "width": 156,
+            "height": 18
+        },
+        "text": "supportive Therapie, bis",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 353,
+            "y": 143,
+            "width": 36,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 601,
+            "y": 142,
+            "width": 150,
+            "height": 19
+        },
+        "text": "sich die Wahrnehmung",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 536,
+            "y": 158,
+            "width": 22,
+            "height": 8
+        },
+        "text": "Fallls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 607,
+            "y": 161,
+            "width": 136,
+            "height": 14
+        },
+        "text": "und das Bewusstsein",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 536,
+            "y": 172,
+            "width": 24,
+            "height": 8
+        },
+        "text": "NEIN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 315,
+            "y": 173,
+            "width": 170,
+            "height": 18
+        },
+        "text": "Ist das kognitive Level des",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 639,
+            "y": 177,
+            "width": 74,
+            "height": 16
+        },
+        "text": "verbessern",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 339,
+            "y": 191,
+            "width": 88,
+            "height": 14
+        },
+        "text": "Patienten adä",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 365,
+            "y": 207,
+            "width": 70,
+            "height": 16
+        },
+        "text": "(CAM-ICU)",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 353,
+            "y": 243,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 367,
+            "y": 273,
+            "width": 64,
+            "height": 14
+        },
+        "text": "Evaluiere:",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 336,
+            "y": 290,
+            "width": 79,
+            "height": 19
+        },
+        "text": "Hörfähigkeit",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 337,
+            "y": 311,
+            "width": 70,
+            "height": 16
+        },
+        "text": "Sehschärfe",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 337,
+            "y": 333,
+            "width": 150,
+            "height": 16
+        },
+        "text": "Sprache (Muttersprache;",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 337,
+            "y": 353,
+            "width": 66,
+            "height": 16
+        },
+        "text": "Präferenz)",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 348,
+            "y": 410,
+            "width": 103,
+            "height": 21
+        },
+        "text": "Beurteilung der",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 331,
+            "y": 431,
+            "width": 138,
+            "height": 16
+        },
+        "text": "Funktionstähigkeiten",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 377,
+            "y": 463,
+            "width": 52,
+            "height": 12
+        },
+        "text": "Falls NEIN",
+        "type": "NO"
+    },
+    {
+        "box_position": {
+            "x": 73,
+            "y": 483,
+            "width": 154,
+            "height": 16
+        },
+        "text": "Sind die feinmotorische",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 565,
+            "y": 485,
+            "width": 165,
+            "height": 14
+        },
+        "text": "Sind dic oral-motorischen",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 89,
+            "y": 501,
+            "width": 124,
+            "height": 16
+        },
+        "text": "Fähigkeiten intakt?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 587,
+            "y": 501,
+            "width": 124,
+            "height": 18
+        },
+        "text": "Fähigkeiten intakt?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 373,
+            "y": 513,
+            "width": 54,
+            "height": 12
+        },
+        "text": "Falls NEIN",
+        "type": "NO"
+    },
+    {
+        "box_position": {
+            "x": 273,
+            "y": 523,
+            "width": 26,
+            "height": 14
+        },
+        "text": "Falls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 530,
+            "y": 528,
+            "width": 32,
+            "height": 8
+        },
+        "text": "Fallsla",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 65,
+            "y": 531,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 273,
+            "y": 537,
+            "width": 28,
+            "height": 12
+        },
+        "text": "NEN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 459,
+            "y": 547,
+            "width": 120,
+            "height": 16
+        },
+        "text": "Hat der Patient ein",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 641,
+            "y": 547,
+            "width": 128,
+            "height": 16
+        },
+        "text": "Hat der Patient eine",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 45,
+            "y": 561,
+            "width": 110,
+            "height": 16
+        },
+        "text": "Kann der Patient",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 275,
+            "y": 565,
+            "width": 54,
+            "height": 14
+        },
+        "text": "Sind dic",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 469,
+            "y": 564,
+            "width": 100,
+            "height": 14
+        },
+        "text": "Tracheostoma?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 663,
+            "y": 565,
+            "width": 84,
+            "height": 16
+        },
+        "text": "orale Sonde?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 63,
+            "y": 579,
+            "width": 72,
+            "height": 14
+        },
+        "text": "schreiben?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 244,
+            "y": 581,
+            "width": 115,
+            "height": 18
+        },
+        "text": "grobmotorischen",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 461,
+            "y": 591,
+            "width": 36,
+            "height": 14
+        },
+        "text": "FalsIA",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 714,
+            "y": 598,
+            "width": 32,
+            "height": 8
+        },
+        "text": "Fallsla",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 241,
+            "y": 599,
+            "width": 124,
+            "height": 16
+        },
+        "text": "Fähigkeiten intakt?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 21,
+            "y": 613,
+            "width": 36,
+            "height": 14
+        },
+        "text": "FalsJA",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 125,
+            "y": 611,
+            "width": 24,
+            "height": 14
+        },
+        "text": "Falls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 447,
+            "y": 613,
+            "width": 124,
+            "height": 16
+        },
+        "text": "Sind die laryngealen",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 123,
+            "y": 625,
+            "width": 30,
+            "height": 12
+        },
+        "text": "NEIN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 629,
+            "y": 623,
+            "width": 54,
+            "height": 14
+        },
+        "text": "Falls NEIN",
+        "type": "NO"
+    },
+    {
+        "box_position": {
+            "x": 446,
+            "y": 629,
+            "width": 93,
+            "height": 18
+        },
+        "text": "Strukturen des",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 57,
+            "y": 653,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Stelle",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 205,
+            "y": 645,
+            "width": 140,
+            "height": 16
+        },
+        "text": "Kommunikationsboard",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 447,
+            "y": 646,
+            "width": 106,
+            "height": 18
+        },
+        "text": "Patienten intakt?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 41,
+            "y": 669,
+            "width": 70,
+            "height": 16
+        },
+        "text": "Papier und",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 203,
+            "y": 663,
+            "width": 38,
+            "height": 18
+        },
+        "text": "VOCA",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 461,
+            "y": 671,
+            "width": 36,
+            "height": 14
+        },
+        "text": "@1",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 61,
+            "y": 687,
+            "width": 30,
+            "height": 14
+        },
+        "text": "Stitt",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 205,
+            "y": 685,
+            "width": 148,
+            "height": 20
+        },
+        "text": "Computergestützte AAC",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 449,
+            "y": 689,
+            "width": 132,
+            "height": 16
+        },
+        "text": "Kann der Patient eine",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 29,
+            "y": 705,
+            "width": 26,
+            "height": 14
+        },
+        "text": "Zur",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 54,
+            "y": 702,
+            "width": 69,
+            "height": 20
+        },
+        "text": "Verfugung",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 449,
+            "y": 707,
+            "width": 110,
+            "height": 14
+        },
+        "text": "Deflation des Cuff",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 449,
+            "y": 725,
+            "width": 68,
+            "height": 14
+        },
+        "text": "tolerieren?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 391,
+            "y": 743,
+            "width": 24,
+            "height": 12
+        },
+        "text": "Falls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 604,
+            "y": 748,
+            "width": 48,
+            "height": 8
+        },
+        "text": "FallsNFIN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 217,
+            "y": 751,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 389,
+            "y": 755,
+            "width": 30,
+            "height": 12
+        },
+        "text": "NEN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 487,
+            "y": 749,
+            "width": 38,
+            "height": 12
+        },
+        "text": "EIst4",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 478,
+            "y": 768,
+            "width": 51,
+            "height": 17
+        },
+        "text": "Einweg-",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 589,
+            "y": 767,
+            "width": 96,
+            "height": 18
+        },
+        "text": "Hat der Patient",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 109,
+            "y": 791,
+            "width": 124,
+            "height": 18
+        },
+        "text": "Computergestützte",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 287,
+            "y": 793,
+            "width": 74,
+            "height": 16
+        },
+        "text": "Blick- oder",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 479,
+            "y": 787,
+            "width": 78,
+            "height": 16
+        },
+        "text": "Sprechventil",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 589,
+            "y": 787,
+            "width": 106,
+            "height": 18
+        },
+        "text": "hartnäckige oder",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 109,
+            "y": 809,
+            "width": 30,
+            "height": 14
+        },
+        "text": "AAC",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 589,
+            "y": 805,
+            "width": 116,
+            "height": 14
+        },
+        "text": "reichliche Sekrete?",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 287,
+            "y": 811,
+            "width": 154,
+            "height": 18
+        },
+        "text": "Augenzwinkergesteuert",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 169,
+            "y": 827,
+            "width": 26,
+            "height": 14
+        },
+        "text": "mit",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 297,
+            "y": 824,
+            "width": 125,
+            "height": 24
+        },
+        "text": "computergestutzte",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 707,
+            "y": 833,
+            "width": 38,
+            "height": 14
+        },
+        "text": "Falls JA",
+        "type": "YES"
+    },
+    {
+        "box_position": {
+            "x": 109,
+            "y": 843,
+            "width": 148,
+            "height": 16
+        },
+        "text": "Einzelschaltersteuerun",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 287,
+            "y": 843,
+            "width": 30,
+            "height": 16
+        },
+        "text": "AAC",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 489,
+            "y": 841,
+            "width": 118,
+            "height": 16
+        },
+        "text": "Sprecheinsatz der",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 631,
+            "y": 843,
+            "width": 24,
+            "height": 12
+        },
+        "text": "Falls",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 629,
+            "y": 855,
+            "width": 30,
+            "height": 12
+        },
+        "text": "NEIN",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 123,
+            "y": 861,
+            "width": 32,
+            "height": 14
+        },
+        "text": "oder",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 154,
+            "y": 859,
+            "width": 99,
+            "height": 20
+        },
+        "text": "Blicksteuerung",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 497,
+            "y": 859,
+            "width": 102,
+            "height": 14
+        },
+        "text": "Trachealkanüle",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 680,
+            "y": 857,
+            "width": 91,
+            "height": 20
+        },
+        "text": "Elektrolarynx",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 53,
+            "y": 901,
+            "width": 698,
+            "height": 20
+        },
+        "text": "Dokumentiere den Kommunikationsbedarf und den Erfolg von Kommunikationsinterventionen in der",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 351,
+            "y": 921,
+            "width": 98,
+            "height": 16
+        },
+        "text": "Patientenakte",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 86,
+            "y": 936,
+            "width": 630,
+            "height": 24
+        },
+        "text": "(bei mangelnder Effektivität und ausbleibendem Erfolg sollte eine alternative augmentative",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 241,
+            "y": 959,
+            "width": 318,
+            "height": 18
+        },
+        "text": "Kommunikationsmethode angeboten werden)",
+        "type": "NODE"
+    },
+    {
+        "box_position": {
+            "x": 422,
+            "y": 189,
+            "width": 40,
+            "height": 18
+        },
+        "text": "quat?",
+        "type": "NODE"
+    }
+]

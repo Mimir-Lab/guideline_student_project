@@ -6,16 +6,26 @@ import google.generativeai as genai
 
 app = FastAPI(title="Medical Flowchart API")
 
-# Configure Gemini
-API_KEY = "YOUR_GEMINI_API_KEY"
+import os
+import google.generativeai as genai
+from dotenv import load_dotenv 
+
+load_dotenv() 
+api_key = os.getenv("GEMINI_API_KEY")
+
+if not api_key:
+    print("Error: GEMINI_API_KEY not found in environment variables!")
+else:
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+
+# API_KEY = ""
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
-# Load the "Knowledge Base" (the JSON you extracted in your notebook)
 def load_knowledge_base():
     with open("structured_boxes.json", "r", encoding="utf-8") as f:
         data = json.load(f)
-    # Convert to a text representation for the prompt context
     kb_text = "\n".join([f"- {item['text']} (Type: {item['type']})" for item in data])
     return kb_text
 
