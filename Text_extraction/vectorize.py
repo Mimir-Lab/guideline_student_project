@@ -4,7 +4,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_core.documents import Document
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCPpzz8OxHpvtORDJoBiqFfgCSVRrHmh0E"
+os.environ["GOOGLE_API_KEY"] = "" #Enter API Key
 
 try:
     with open("mimir_chunks.json", "r", encoding="utf-8") as f:
