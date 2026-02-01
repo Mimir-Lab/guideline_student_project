@@ -1,0 +1,1 @@
+["START: Patient beatmet?", "WENN JA -> Ist das Bewusstsein des Patienten vorhanden?", "WENN NEIN -> Kommunikation über basale Stimulation.", "WENN BEWUSSTSEIN JA -> Kann der Patient nicken/schütteln?"]
