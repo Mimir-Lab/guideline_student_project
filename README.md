@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # MIMIR: Medical Guideline RAG System
 
 MIMIR is a Retrieval-Augmented Generation (RAG) system specifically designed for processing and querying medical guideline documents. It utilizes a sophisticated pipeline to convert PDFs into searchable logic paths.
@@ -21,6 +20,3 @@ MIMIR is a Retrieval-Augmented Generation (RAG) system specifically designed for
 3. Add your credentials to `.streamlit/secrets.toml`:
    ```toml
    OPENAI_API_KEY = "your_key_here"
-=======
-# guideline_student_project
->>>>>>> 78b0036b202bffe38755531e8bbad918c858363e
