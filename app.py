@@ -11,7 +11,7 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 st.set_page_config(page_title="MIMIR AI", page_icon="🏥")
 st.title("🏥 MIMIR: Unified Medical Assistant")
 
-# Securely load API key
+
 API_KEY = st.secrets.get("OPENROUTER_API_KEY", "")
 
 @st.cache_resource
@@ -19,7 +19,7 @@ def get_db():
     embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL)
     return Chroma(persist_directory=DB_DIR, embedding_function=embeddings, collection_name="mimir_chunks")
 
-# Initialize database
+# Initializing database
 try:
     db = get_db()
 except Exception as e:

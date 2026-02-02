@@ -1,6 +1,6 @@
 # chunking_big.py
 # BIG CHUNKING (>= 1000 tokens) + sentence-safe boundaries + fixes for PDF spacing artifacts
-# Output: one JSON file per input .md file in data/chunks/
+ 
 
 import json
 import re
@@ -8,7 +8,7 @@ from pathlib import Path
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-# -------------------- SETTINGS --------------------
+
 MIN_TOKENS = 1000          # each final chunk must be at least this many tokens
 TARGET_TOKENS = 1300       # we try to reach this before we "flush" a chunk
 MAX_CHARS_PER_CHUNK = 14000  # safety cap to prevent extremely huge chunks
@@ -39,7 +39,7 @@ def clean_md_text(text: str) -> str:
     - too many blank lines
     Keeps paragraph structure as much as possible.
     """
-    # 1) Normalize line endings
+    # 1) Normalizing line endings
     text = text.replace("\r\n", "\n").replace("\r", "\n")
 
     # 2) Non-breaking spaces -> normal spaces

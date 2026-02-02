@@ -1,7 +1,4 @@
 # chunking_big.py
-# BIG CHUNKING (>= 1000 tokens) + sentence-safe boundaries + fixes for PDF spacing artifacts
-# Output: one JSON file per input .md file in data/chunks/
-
 import json
 import re
 from pathlib import Path
@@ -10,13 +7,13 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # -------------------- SETTINGS --------------------
 MIN_TOKENS = 1000          # each final chunk must be at least this many tokens
-TARGET_TOKENS = 1300       # we try to reach this before we "flush" a chunk
+TARGET_TOKENS = 1300       
 MAX_CHARS_PER_CHUNK = 14000  # safety cap to prevent extremely huge chunks
 
 MD_DIR = Path("data/md")
 CHUNK_DIR = Path("data/chunks")
 CHUNK_DIR.mkdir(parents=True, exist_ok=True)
-# -------------------------------------------------
+
 
 
 def approx_token_count(text: str) -> int:
@@ -49,11 +46,11 @@ def clean_md_text(text: str) -> str:
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
 
     # 4) Break up collapsed "society lists" / long lines that should be separate bullets/lines
-    # Example: "... (DGF) Deutsche Gesellschaft für Geriatrie (DGG) ..."
+    
     # We insert paragraph breaks before repeated "Deutsche Gesellschaft..." patterns.
     text = re.sub(r"\)\s+(Deutsche\s+Gesellschaft)", r")\n\n\1", text)
 
-    # Also handle "Deutschen Gesellschaft..." variants if they appear
+    r
     text = re.sub(r"\)\s+(Deutschen\s+Gesellschaft)", r")\n\n\1", text)
 
     # 5) Collapse huge internal spacing but keep newlines:
@@ -63,7 +60,7 @@ def clean_md_text(text: str) -> str:
     for ln in lines:
         # Replace multiple spaces/tabs with a single space
         ln = re.sub(r"[ \t]{2,}", " ", ln)
-        # Trim ends
+        
         ln = ln.strip()
         cleaned_lines.append(ln)
     text = "\n".join(cleaned_lines)

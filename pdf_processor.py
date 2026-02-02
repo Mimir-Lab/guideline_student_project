@@ -4,7 +4,7 @@ import fitz  # PyMuPDF
 from pathlib import Path
 from docling.document_converter import DocumentConverter
 
-# Verzeichnis-Setup
+
 PDF_DIR = Path("data/pdfs")
 MD_DIR = Path("data/md")
 CHUNK_DIR = Path("data/chunks")
@@ -19,12 +19,12 @@ def extract_flowchart_logic(pdf_path):
     structured_data = []
     
     for page in doc:
-        # Hier extrahieren wir Text-Blöcke (als Ersatz für die Bild-Extraktion im Notebook)
+        
         blocks = page.get_text("dict")["blocks"]
         for b in blocks:
             if "lines" in b:
                 text = " ".join([span["text"] for line in b["lines"] for span in line["spans"]])
-                if len(text.strip()) > 2:  # Nur relevantes speichern
+                if len(text.strip()) > 2:  
                     structured_data.append({
                         "text": text.strip(),
                         "type": "NODE" if "Falls" not in text else "YES/NO"
@@ -40,16 +40,16 @@ def run_pipeline():
     for pdf_path in pdf_files:
         print(f"🔄 Verarbeite: {pdf_path.name}")
         
-        # 1. Text-Extraktion (Markdown)
+        # 1. Text-Extraction (Markdown)
         result = converter.convert(str(pdf_path))
         md_text = result.document.export_to_markdown()
         (MD_DIR / f"{pdf_path.stem}.md").write_text(md_text, encoding="utf-8")
         
-        # 2. Flowchart-Extraktion (Code aus deinem Notebook integriert)
+        # 2. Flowchart-Extraction (Code aus deinem Notebook integriert)
         nodes = extract_flowchart_logic(str(pdf_path))
         all_flowchart_nodes.extend(nodes)
 
-    # 3. Speichere die JSON-Datei automatisch (ersetzt den manuellen Notebook-Schritt)
+    
     with open("structured_boxes.json", "w", encoding="utf-8") as f:
         json.dump(all_flowchart_nodes, f, ensure_ascii=False, indent=4)
     

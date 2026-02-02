@@ -7,7 +7,7 @@ from typing import List, Dict
 from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-# ================= CONFIG =================
+
 
 # Local embeddings (FREE)
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
