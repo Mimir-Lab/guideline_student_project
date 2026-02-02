@@ -38,7 +38,7 @@ def run_pipeline():
     all_flowchart_nodes = []
 
     for pdf_path in pdf_files:
-        print(f"🔄 Verarbeite: {pdf_path.name}")
+        print(f"🔄 Processed: {pdf_path.name}")
         
         # 1. Text-Extraction (Markdown)
         result = converter.convert(str(pdf_path))
