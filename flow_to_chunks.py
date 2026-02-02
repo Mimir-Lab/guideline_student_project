@@ -7,7 +7,7 @@ def convert():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if not json_path.exists():
-        print("Hinweis: structured_boxes.json noch nicht vorhanden. Überspringe...")
+        print("Note: structured_boxes.json does not yet exist. Skip...")
         return
 
     with open(json_path, "r", encoding="utf-8") as f:
@@ -25,7 +25,7 @@ def convert():
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump([content], f, ensure_ascii=False, indent=2)
     
-    print(f"✅ Flowchart-Logik konvertiert: {out_file}")
+    print(f"✅ Flowchart logic converted: {out_file}")
 
 if __name__ == "__main__":
     convert()
