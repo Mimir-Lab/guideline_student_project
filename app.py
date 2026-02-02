@@ -3,7 +3,7 @@ import requests
 from langchain_chroma import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-# --- CONFIGORATION ---
+# --- CONFIGURATION ---
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 DB_DIR = "./mimir_db"
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -49,8 +49,8 @@ if prompt := st.chat_input("Frage zu Leitlinien oder Flowcharts..."):
         context += f"\n--- {type_label} ---\n{d.page_content}\n"
 
     system_prompt = (
-        "Du bist ein medizinischer Assistent. Antworte STRENG nur nach den bereitgestellten Informationen. "
-        "Wenn ein 'ENTSCHEIDUNGS-ALGORITHMUS' vorhanden ist, folge seinen Schritten exakt."
+        "You are a medical assistant. STRICTLY answer only according to the information provided."
+        "If a 'DECISION ALGORITHM' is available, follow its steps exactly."
     )
 
     # API Call
