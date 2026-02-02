@@ -4,7 +4,6 @@ import requests
 st.set_page_config(page_title="Flowchart Bot", page_icon="🏥")
 
 st.title("🏥 MIMIR - Medizinisches Entscheidungs Tool")
-# st.markdown("Interaktiver Assistent basierend auf dem Kommunikations-Algorithmus.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
