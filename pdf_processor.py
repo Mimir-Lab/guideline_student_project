@@ -14,7 +14,7 @@ for d in [MD_DIR, CHUNK_DIR, IMAGE_DIR]:
     d.mkdir(parents=True, exist_ok=True)
 
 def extract_flowchart_logic(pdf_path):
-    """Simuliert die Logik aus deinem Notebook: Findet Textboxen und Koordinaten."""
+    """Simulates the logic from your notebook: Finds text boxes and coordinates."""
     doc = fitz.open(pdf_path)
     structured_data = []
     
@@ -53,7 +53,7 @@ def run_pipeline():
     with open("structured_boxes.json", "w", encoding="utf-8") as f:
         json.dump(all_flowchart_nodes, f, ensure_ascii=False, indent=4)
     
-    print("✅ Fertig: Markdown erstellt UND structured_boxes.json generiert!")
+    print("✅ Done: Markdown created AND structured_boxes.json generated!")
 
 if __name__ == "__main__":
     run_pipeline()
