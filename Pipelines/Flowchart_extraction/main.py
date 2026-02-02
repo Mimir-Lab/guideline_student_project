@@ -19,7 +19,7 @@ else:
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-1.5-flash')
 
-# API_KEY = ""
+# API_KEY = ""  Enter API Key
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
