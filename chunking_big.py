@@ -1,8 +1,6 @@
-# chunking_big.py
 import json
 import re
 from pathlib import Path
-
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # -------------------- SETTINGS --------------------
@@ -46,11 +44,9 @@ def clean_md_text(text: str) -> str:
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
 
     # 4) Break up collapsed "society lists" / long lines that should be separate bullets/lines
-    
     # We insert paragraph breaks before repeated "Deutsche Gesellschaft..." patterns.
     text = re.sub(r"\)\s+(Deutsche\s+Gesellschaft)", r")\n\n\1", text)
-
-    r
+    # Also handle "Deutschen Gesellschaft..." variants if they appear
     text = re.sub(r"\)\s+(Deutschen\s+Gesellschaft)", r")\n\n\1", text)
 
     # 5) Collapse huge internal spacing but keep newlines:
