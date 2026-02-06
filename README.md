@@ -53,11 +53,11 @@ The following features are currently in the backlog for future development:
 
 2.  **Install Dependencies:**
     ```bash
-    pip install -r requirements.txt
+    pip install requirements.txt
     ```
 
 3.  **Configure Secrets:**
-    Create a `.streamlit/secrets.toml` file in the root directory:
+    Create a `secrets.toml` file in the root directory:
     ```toml
     OPENROUTER_API_KEY = "your_openai_or_openrouter_key_here"
     ```
@@ -69,10 +69,10 @@ The following features are currently in the backlog for future development:
     python pdf_processor.py
 
     # Step 2: Process text into large (1000+ token) medical chunks
-    python chunking_big.py
+    python flows_to_chunks.py
 
     # Step 3: Convert spatial flowchart coordinates into readable logic paths
-    python flow_to_chunks.py
+    python chunking_big.py
 
     # Step 4: Vectorize all prepared data into the Chroma DB
     python vectorize_unified.py
@@ -80,7 +80,7 @@ The following features are currently in the backlog for future development:
 
 5.  **Launch the Assistant:**
     ```bash
-    streamlit run app.py
+    streamlit app.py
     ```
 
 ---
