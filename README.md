@@ -25,16 +25,6 @@ MIMIR is a specialized Retrieval-Augmented Generation (RAG) system engineered to
 
 ---
 
-##  Contributors & Project History
-
-> **Note on Repository History:** Due to a critical restructuring of the file system and the resolution of broken submodule links , the commit history was re-initialized during the final push. The old extraction logic was pushed by the following team members:
-
-* **Tania:** : **Flowchart Extraction**. 
-* **Vishnu:** : **Text Extraction**. 
-
-
----
-
 ##  Roadmap & Backlog
 
 The following features are currently in the backlog for future development:
